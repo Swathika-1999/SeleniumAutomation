@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" preserve-order="true" name="C:/Users/Swathika/IdeaProjects/adNabu">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="org.example.ProductSearch">
+                <methods>
+                    <include name="search"/>
+                    <include name="addItemToCart"/>
+                    <include name="removeItemFromCart"/>
+                    <include name="countPriceValidation"/>
+                </methods>
+            </class>
+            <class name="org.example.AddRemoveItems">
+                <methods>
+                    <include name="search"/>
+                    <include name="stockFilter"/>
+                    <include name="outOfStockFilter"/>
+                </methods>
+            </class>
+            <class name="org.example.Filtering">
+                <methods>
+                    <include name="search"/>
+                    <include name="specialCharacterSearch"/>
+                    <include name="outOfDatabaseSearch"/>
+                    <include name="isTemplateFound"/>
+                    <include name="validDataSearch"/>
+                    <include name="capitalLetterSearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
